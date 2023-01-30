@@ -8,8 +8,8 @@ The program should print “Not Found!” for the following strings,
 import "testing"
  
 func TestConvert(t *testing.T) {
-    var positives = [] string {"ian", "Ian", "iuiygaygn", "I d skd a efju N"}
-    var negatives = [] string {"ihhhhhn", "ina", "xian", ""}
+    const positives = [...] string {"ian", "Ian", "iuiygaygn", "I d skd a efju N"}
+    const negatives = [...] string {"ihhhhhn", "ina", "xian", ""}
 
     for _, item := range positives {
         if (!checkPattern(item)) {
